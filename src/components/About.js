@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin,FaGithub } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -18,6 +19,14 @@ const About = () => {
 
             <p className="lead mb-5">Software Engineer who's passionate in the field of study that can create both
             refined and functional based web applications. </p>
+
+            <div className='icons'>
+
+                <ul>
+                    <li id='github'><i><FaGithub/></i></li>
+                    <li id='linkedin'><i><FaLinkedin/></i></li>
+                </ul>
+            </div>
         </div>
       </div>
   );

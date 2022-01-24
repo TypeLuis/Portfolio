@@ -2,10 +2,10 @@
 @import "./mixins";
 @import "./navbar";
 
-body {
-  overscroll-behavior-y: none;
-  max-width: 100%;
-}
+// body {
+//   overscroll-behavior-y: none;
+//   max-width: 100%;
+// }
 
 // html,
 // body {
@@ -61,15 +61,10 @@ body {
       @include flexCenter(100vh, column);
       font-size: 50px;
 
-      // overflow: hidden;
-      // width: 100%;
-      // column-width: 150px;
       flex-wrap: wrap;
       margin-left: 6em;
-      // h1 {
-      //   max-width: 2px;
-      // }
-      // // overflow-y: scroll;
+
+      // @include icons(#0a82ed);
     }
   }
 
@@ -78,6 +73,7 @@ body {
     .heading {
       display: flex;
       margin-top: 1em;
+      margin-left: 0.25em;
     }
 
     #About-Heading {
@@ -85,8 +81,17 @@ body {
     }
 
     .details {
-      @include flexCenter(50vh, column);
+      // @include flexCenter(50vh, column);
+      // flex-wrap: wrap;
+      height: max-content;
+      margin: 0 15px;
+      min-height: 40vh;
+      font-size: 1.25em;
     }
+  }
+
+  .details {
+    @include icons();
   }
 }
 
