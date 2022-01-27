@@ -13,7 +13,7 @@ const About = () => {
             </h1>
 
             <div className="subheading mb-5">
-                80 Ross Street · Brooklyn, NY 11249 · (347) 993-8277 ·
+                (347) 993-8277 ·
                 <a href="mailto:name@email.com">typeluisbusiness@gmail.com</a>
             </div>
 

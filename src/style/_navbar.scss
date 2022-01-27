@@ -1,5 +1,6 @@
 .navbar {
   background-color: red;
+  z-index: 100;
   @media (min-width: 901px) {
     display: flex;
     flex-wrap: wrap;

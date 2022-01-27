@@ -8,7 +8,7 @@
   flex-direction: $direction;
 }
 
-@mixin icons() {
+@mixin icons($height, $width) {
   .icons {
     display: flex;
     text-align: center;
@@ -23,10 +23,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 60px;
-        width: 63px;
-        font-size: 30px;
-        line-height: 60px;
+        height: $height;
+        width: $width;
+        font-size: $height / 2;
+        line-height: $height;
         color: #666;
         background-color: #171515;
         border-radius: 50%;
