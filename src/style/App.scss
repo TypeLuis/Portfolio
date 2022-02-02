@@ -2,6 +2,7 @@
 @import "./mixins";
 @import "./navbar";
 @import "./modal";
+@import "./skills";
 
 // body {
 //   overscroll-behavior-y: none;
@@ -113,7 +114,6 @@
   height: max-content;
 
   .project-container {
-    cursor: pointer;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -121,27 +121,29 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
-
+    
     img {
+      cursor: pointer;
       max-height: 25vmin;
       box-shadow: 2px 2px 2px 2px black;
       // max-width: 20vw;
       margin: 10px;
       border-radius: 0.75em;
+      
+      &:hover {
+        box-shadow: 2px 2px 3px 3px black;
+      }
     }
 
-    &:hover img {
-      box-shadow: 4px 4px 10px 3px black;
-    }
 
     h2 {
-      font-size: 0.5em;
+      font-size: .5em;
       position: relative;
       &::before {
         position: absolute;
         pointer-events: none;
         content: "";
-        top: 0;
+        top: 0 ;
         left: 0;
         width: 100%;
         height: 15vmin;
@@ -151,14 +153,14 @@
         filter: blur(1.5em);
         opacity: 0;
       }
+
     }
+    
     &:hover h2::before {
       opacity: 1;
       transition: opacity 300ms linear;
     }
   }
-  // overflow: hidden;
-  // max-height: 200px;
 }
 
 #About {
