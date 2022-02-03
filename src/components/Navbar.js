@@ -1,70 +1,72 @@
 import React from 'react';
 import luis from '../images/Luis.jpg';
+import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [burger, setBurger] = useState(false)
     const [content, setContent] = useState(false)
 
     const handleClick = () => {
-        if(burger === true){
+        if (burger === true) {
             setContent(!content)
-            setTimeout(()=> {setBurger(!burger)}, 450)
+            setTimeout(() => { setBurger(!burger) }, 450)
         }
-        else{
+        else {
             setBurger(!burger)
             setContent(!content)
         }
     }
-  return (
-    <div>
+    return (
+        <div>
 
-        <nav className='navbar'>
-            <img className='profile-img' src={luis}/>
+            <nav className='navbar'>
+                <img className='profile-img' src={luis} />
 
-            <ul>
-                <li>About</li>
+                <ul>
+                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>About</li></Link>
 
-                <li>Skills</li>
+                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Portfolio</li></Link>
 
-                <li>Portfolio</li>
-
-            </ul>
+                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Skills</li></Link>
 
 
-            <span className='portfolio-name'>Luis Lopez</span>
-
-            <span onClick={handleClick} className='hamburger'>
-                <FontAwesomeIcon 
-                    icon={faBars}
-                />
-            </span>
-            
-            {burger &&
-            
-                <div className={`burger-content ${String(content)}`}>
-                    
-                    <ol>
-                        <li>About</li>
-
-                        <li>Skills</li>
-
-                        <li>Portfolio</li>
-
-                    </ol>
-                    
-                </div>
+                </ul>
 
 
-            }
-        </nav>
+                <span className='portfolio-name'>Luis Lopez</span>
 
-    </div>
-  );
+                <span onClick={handleClick} className='hamburger'>
+                    <FontAwesomeIcon
+                        icon={faBars}
+                    />
+                </span>
+
+                {burger &&
+
+                    <div className={`burger-content ${String(content)}`}>
+
+                        <ol>
+                            <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>About</li></Link>
+
+                            <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Portfolio</li></Link>
+
+                            <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Skills</li></Link>
+
+                        </ol>
+
+                    </div>
+
+
+                }
+            </nav>
+
+        </div>
+    );
 };
 
 export default Navbar;

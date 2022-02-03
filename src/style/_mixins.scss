@@ -17,6 +17,17 @@
     ul {
       display: flex;
       list-style: none;
+
+
+      a{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $height / 2;
+        line-height: $height;
+        color: #666;
+      }
       li {
         // font-size: 3em;
         // display: block;
@@ -25,9 +36,6 @@
         align-items: center;
         height: $height;
         width: $width;
-        font-size: $height / 2;
-        line-height: $height;
-        color: #666;
         background-color: #171515;
         border-radius: 50%;
         margin: 5px 15px;

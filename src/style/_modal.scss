@@ -21,13 +21,13 @@
   }
   @media (max-width: 900px) {
     margin-top: 10vh;
-    height: max-content;
+    // height: max-content;
   }
   img {
     width: 80%;
     margin-top: 0.5em;
   }
-  p {
+  .portfolio-description {
     margin: 0;
     font-size: 0.5em;
   }
@@ -95,6 +95,16 @@
   }
 }
 
+
+.modal-icon{
+  font-size: 5em;
+}
+
+.icon-description{
+  margin: 0;
+  font-size: 1em;
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {
@@ -135,10 +145,11 @@
 
 .modal-header {
   padding: 4px 25px;
-  background-color: blueviolet;
+  background-color: #C491F7;
   color: white;
 }
 
 .modal-body {
   padding: 2px 16px;
 }
+

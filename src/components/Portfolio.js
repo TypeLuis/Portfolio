@@ -63,12 +63,12 @@ const data_list = [
   }
 ]
 
-const Portfolio = () => {
+const Portfolio = (props) => {
   const [modal, setModal] = useState('')
 
 
   return (
-    <div className='content-page'>
+    <div ref={props.portfolioRef} className='content-page'>
       <h1 className='heading'>Portfolio</h1>
 
       <div id='portfolio' className='details'>

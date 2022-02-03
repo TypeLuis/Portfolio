@@ -19,7 +19,7 @@ functions.showModal = (modal, setModal) => {
                 </div>
                 <div className="modal-body">
                     <img src={modal.gif} />
-                    <p>{modal.summary}</p>
+                    <p className="portfolio-description">{modal.summary}</p>
 
 
                     <div className="skill-list">
@@ -96,8 +96,8 @@ functions.showIconModal = (modal, setModal) => {
                     <h2>{modal.title}</h2>
                 </div>
                 <div className="modal-body">
-                    <div><modal.icon /></div>
-                    <p>{modal.description}</p>
+                    <div className="modal-icon"><modal.icon /></div>
+                    <p className="icon-description">{modal.description}</p>
 
                 </div>
             </div>
