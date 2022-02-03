@@ -114,7 +114,7 @@ $small-marq-height: 20vh;
             100% {transform: translateX(-3em * 10);}
         }
 
-        &::hover{
+        &:hover{
             animation-play-state: paused;
         }
     }
