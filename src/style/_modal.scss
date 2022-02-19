@@ -24,7 +24,10 @@
     // height: max-content;
   }
   img {
-    width: 50%;
+    width: 70%;
+    aspect-ratio: 16 / 9;
+  // object-fit: cover;
+  object-position: center;
     margin-top: 0.5em;
   }
   .portfolio-description {

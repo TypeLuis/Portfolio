@@ -58,7 +58,7 @@ const data_list = [
     'skills': {
       'frontend': ['Javascript', 'HTML', 'CSS', 'SCSS'],
       'backend': ['PostgreSQL', 'Python'],
-      'libraries': ['Flask', 'React.js', 'Axios', 'Beautiful Soup', 'Dotenv'],
+      'libraries': ['Flask', 'React.js', 'Axios', 'Stripe', 'Beautiful Soup', 'Dotenv'],
     }
   }
 ]

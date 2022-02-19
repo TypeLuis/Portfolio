@@ -5,6 +5,7 @@ import * as Devicons from "react-icons/di"
 import * as SimpleIcons from "react-icons/si"
 
 
+
 const dataList = [
   {
     title: 'Python',
@@ -58,6 +59,12 @@ const dataList = [
     title: 'Flask',
     icon: SimpleIcons.SiFlask,
     description: 'Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions'
+  },
+
+  {
+    title: 'Stripe',
+    icon: FontAwesome.FaStripeS,
+    description: 'Stripe primarily offers payment processing software and application programming interfaces for e-commerce websites and mobile applications. Stripe is a technology company that builds economic infrastructure for the internet.'
   },
 
   {

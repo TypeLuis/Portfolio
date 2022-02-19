@@ -94,9 +94,13 @@
 
 #portfolio {
   @media (max-width: 900px) {
-    margin: 0 auto;
+    // margin: 0 auto;
+    // display: flex;
+    // flex-direction: column;
     .project-container {
       margin: 10px 25px;
+      // width: 60vw;
+      // height: 30vh;
     }
   }
 
@@ -114,7 +118,8 @@
   height: max-content;
   
   .project-container {
-    margin: 10px auto;
+
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,22 +127,35 @@
     text-align: center;
     overflow: hidden;
     perspective: 100px;
+    height: 40vw * 2/3;
+    width: 40vw;
+    padding: 10px;
+    
+    // border: 1px solid black;
     
     
     img {
       cursor: pointer;
-      max-height: 30vmin;
+      height: 75%;
+      width: 75%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+      // border: 1px solid purple;
+      // width: auto;
       box-shadow: 0 0 1px 1px black;
       // max-width: 20vw;
       margin: 10px;
+      margin-bottom: 20px;
       border-radius: 0.75em;
       transition: transform 1s;
+      // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
       // transition: box-shadow 200ms;
       // transition-delay: box-shadow 500ms;
       
       &:hover{
         box-shadow: 1px 1px 3px 3px black;
-        transform: translateZ(5px);
+        transform: translateZ(3px);
       }
       // &:hover {
       // }
