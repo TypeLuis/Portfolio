@@ -28,13 +28,30 @@ const Navbar = (props) => {
                 <img className='profile-img' src={luis} />
 
                 <ul>
-                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Home</li></Link>
+
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#00ade1'}}>
+                        <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
+                    </li>
+
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#ff6493'}}>
+                        <span href='#'  data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
+                    </li>
+
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#ffdd1c'}}>
+                        <span href='#' data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
+                    </li>
+
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#00dc82'}}>
+                        <span href='#' data-text="&nbsp;Skills&nbsp;">&nbsp;Skills&nbsp;</span>
+                    </li>
+
+                    {/* <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Home</li></Link>
 
                     <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>About</li></Link>
 
                     <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Portfolio</li></Link>
 
-                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Skills</li></Link>
+                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Skills</li></Link> */}
 
 
                 </ul>

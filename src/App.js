@@ -15,21 +15,22 @@ function App() {
   const portfolioRef = useRef()
 
   function handleBackClick(e) {
+    console.log(e.target.innerText)
     switch (e.target.innerText) {
 
-      case 'Home':
+      case ' HOME ':
         homeRef.current.scrollIntoView({ behavior: 'smooth' })
         break
 
-      case 'About':
+      case ' ABOUT ':
         aboutRef.current.scrollIntoView({ behavior: 'smooth' })
         break
 
-      case 'Skills':
+      case ' SKILLS ':
         skillRef.current.scrollIntoView({ behavior: 'smooth' })
         break
 
-      case 'Portfolio':
+      case ' PORTFOLIO ':
         portfolioRef.current.scrollIntoView({ behavior: 'smooth' })
         break
 
