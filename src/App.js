@@ -5,15 +5,21 @@ import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import { useState, useRef } from 'react'
 import './style/App.scss'
+import { Home } from './components/Home';
 
 function App() {
 
   const skillRef = useRef()
+  const homeRef = useRef()
   const aboutRef = useRef()
   const portfolioRef = useRef()
 
   function handleBackClick(e) {
     switch (e.target.innerText) {
+
+      case 'Home':
+        homeRef.current.scrollIntoView({ behavior: 'smooth' })
+        break
 
       case 'About':
         aboutRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -32,9 +38,13 @@ function App() {
   return (
     <div style={{ overflowX: 'hidden' }} className="App">
       <Navbar handleBackClick={handleBackClick} />
-      <About aboutRef={aboutRef} />
-      <Portfolio portfolioRef={portfolioRef} />
-      <Skills skillRef={skillRef} />
+      <div id='spacer'>
+
+        <Home homeRef={homeRef} />
+        <About aboutRef={aboutRef} />
+        <Portfolio portfolioRef={portfolioRef} />
+        <Skills skillRef={skillRef} />
+      </div>
     </div>
   );
 }

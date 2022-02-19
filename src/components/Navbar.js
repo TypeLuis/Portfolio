@@ -28,6 +28,8 @@ const Navbar = (props) => {
                 <img className='profile-img' src={luis} />
 
                 <ul>
+                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Home</li></Link>
+
                     <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>About</li></Link>
 
                     <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Portfolio</li></Link>

@@ -78,7 +78,7 @@ const Portfolio = (props) => {
             <div key={i} className='project-container card card-shadow'>
 
               <div className='card-header card-image'>
-                {item.image && <img onClick={() => { setModal(item) }} src={item.image} />}
+                {item.image && <img src={item.image} />}
 
               </div>
 
@@ -89,7 +89,7 @@ const Portfolio = (props) => {
 
               <div className='card-footer'>
 
-                <button className='btn'>More Info</button>
+                <button onClick={() => { setModal(item) }} className='btn'>More Info</button>
 
               </div>
 

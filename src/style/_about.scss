@@ -1,0 +1,10 @@
+#About {
+  .details {
+    @media (min-width: 901px) {
+      // margin: 0 auto;
+      //   margin-left: 240px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

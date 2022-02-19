@@ -103,6 +103,7 @@ const Skills = (props) => {
           <div className='slide-track'>
 
             {dataList.map((item, i) => {
+              // console.log(i + 1)
               return (
                 <div key={i} className="slide"><span onClick={() => { setModal(item) }}><item.icon /></span></div>
               )

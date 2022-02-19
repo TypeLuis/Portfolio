@@ -4,7 +4,8 @@
 @import "./modal";
 @import "./skills";
 @import "./portfolio";
-
+@import "./about";
+@import "./home";
 // body {
 //   overscroll-behavior-y: none;
 //   max-width: 100%;
@@ -20,6 +21,11 @@
 // }
 .App {
   text-align: center;
+  #spacer {
+    @media (min-width: 901px) {
+      margin-left: 240px;
+    }
+  }
   // min-height: 100vh;
   // background-color: red;
 }
@@ -47,6 +53,9 @@
 .content-page {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  min-height: 100vh;
   border-bottom: 1px solid gray;
 
   // This prevents text from overflowing y
@@ -54,16 +63,22 @@
   white-space: pre-wrap;
   word-break: break-word;
   @media (min-width: 901px) {
+    // margin-left: 120px;
+    // left: 250px;
+    // width: 100vw;
+    width: 100%;
+    // width: calc(100vw - 280px);
     .heading {
+      // position: relative;
       display: flex;
-      margin-left: 7.8em;
+      // margin-left: 7.8em;
     }
     .details {
-      @include flexCenter(100vh, column);
-      font-size: 50px;
+      // @include flexCenter(100vh, column);
+      // font-size: 50px;
 
-      flex-wrap: wrap;
-      margin-left: 5.2em;
+      // flex-wrap: wrap;
+      // margin-left: 5.2em;
 
       @include icons(120px, 126px);
     }
@@ -95,7 +110,7 @@
 
 #portfolio {
   @media (max-width: 900px) {
-    // margin: 0 auto;
+    margin: 10px;
     // display: flex;
     // flex-direction: column;
     .project-container {
@@ -107,19 +122,20 @@
 
   @media (min-width: 901px) {
     // margin: 0 auto;
-    left: 250px;
-    width: calc(100vw - 280px);
+    // left: 250px;
+    // width: calc(100vw - 280px);
   }
   position: relative;
   // margin: 0 auto;
   gap: 1em;
   display: grid;
   // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   // grid-template-columns: repeat(2, 1fr);
   // grid-template-rows: auto auto 1fr auto;
   text-align: center;
   margin-bottom: 20px;
+
   // width: max-content;
   // height: max-content;
 
