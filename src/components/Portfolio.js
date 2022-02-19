@@ -5,6 +5,7 @@ import functions from '../Functions/Functions'
 import dodge from '../images/DTB.gif'
 import dodgeImg from '../images/dodge.png'
 import animeImg from '../images/anime.png'
+import animeImg2 from '../images/anime_search.jpg'
 import blogImg from '../images/myblog.png'
 import storeImg from '../images/store.png'
 
@@ -40,7 +41,7 @@ const data_list = [
     'name': 'ANIME SEARCH',
     'summary': "Anime Search is a full stack web application that queries anime shows from a third party api. A user can add shows to their watched and favorites list and download images of their show. The chart page displays a graph of all user's favorite shows.",
     'gif': dodge,
-    'image': animeImg,
+    'image': animeImg2,
     'link': 'https://anime-database-project.herokuapp.com/search',
     'skills': {
       'frontend': ['Javascript', 'HTML', 'CSS'],
@@ -71,13 +72,26 @@ const Portfolio = (props) => {
     <div ref={props.portfolioRef} className='content-page'>
       <h1 className='heading'>Portfolio</h1>
 
-      <div id='portfolio' className='details'>
+      <div id='portfolio' className='port-details'>
         {data_list.map((item, i) => {
           return (
-            <div key={i} className='project-container'>
-              {item.name && <h2>{item.name}</h2>}
+            <div key={i} className='project-container card card-shadow'>
 
-              {item.image && <img onClick={() => { setModal(item) }} src={item.image} />}
+              <div className='card-header card-image'>
+                {item.image && <img onClick={() => { setModal(item) }} src={item.image} />}
+
+              </div>
+
+              <div className='card-body'>
+
+                {item.name && <h2>{item.name}</h2>}
+              </div>
+
+              <div className='card-footer'>
+
+                <button className='btn'>More Info</button>
+
+              </div>
 
 
             </div>

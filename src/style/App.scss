@@ -3,6 +3,7 @@
 @import "./navbar";
 @import "./modal";
 @import "./skills";
+@import "./portfolio";
 
 // body {
 //   overscroll-behavior-y: none;
@@ -98,7 +99,7 @@
     // display: flex;
     // flex-direction: column;
     .project-container {
-      margin: 10px 25px;
+      // margin: 10px 25px;
       // width: 60vw;
       // height: 30vh;
     }
@@ -106,73 +107,65 @@
 
   @media (min-width: 901px) {
     // margin: 0 auto;
-    left: 130px;
+    left: 250px;
+    width: calc(100vw - 280px);
   }
   position: relative;
-  margin: 0 auto;
+  // margin: 0 auto;
+  gap: 1em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto 1fr auto;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: auto auto 1fr auto;
   text-align: center;
-  width: max-content;
-  height: max-content;
-  
-  .project-container {
+  margin-bottom: 20px;
+  // width: max-content;
+  // height: max-content;
 
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    perspective: 100px;
-    height: 40vw * 2/3;
-    width: 40vw;
-    padding: 10px;
-    
-    // border: 1px solid black;
-    
-    
-    img {
-      cursor: pointer;
-      height: 75%;
-      width: 75%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      object-position: center;
-      // border: 1px solid purple;
-      // width: auto;
-      box-shadow: 0 0 1px 1px black;
-      // max-width: 20vw;
-      margin: 10px;
-      margin-bottom: 20px;
-      border-radius: 0.75em;
-      transition: transform 1s;
-      // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      // transition: box-shadow 200ms;
-      // transition-delay: box-shadow 500ms;
-      
-      &:hover{
-        box-shadow: 1px 1px 3px 3px black;
-        transform: translateZ(3px);
-      }
-      // &:hover {
-      // }
-    
-    }
+  // .project-container {
+  //   // margin: 10px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  //   overflow: hidden;
+  //   perspective: 100px;
+  //   height: 40vw * 2/3;
+  //   width: 40vw;
+  //   padding: 10px;
 
+  //   // border: 1px solid black;
 
-    h2 {
-      font-size: .5em;
-      position: relative;
-      
+  //   img {
+  //     cursor: pointer;
+  //     height: 75%;
+  //     width: 75%;
+  //     aspect-ratio: 16 / 9;
+  //     object-fit: cover;
+  //     object-position: center;
+  //     box-shadow: 0 0 1px 1px black;
+  //     // max-width: 20vw;
+  //     margin: 10px;
+  //     margin-bottom: 20px;
+  //     border-radius: 0.75em;
+  //     transition: transform 1s;
+  //     // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  //     // transition: box-shadow 200ms;
+  //     // transition-delay: box-shadow 500ms;
 
-    }
+  //     &:hover {
+  //       box-shadow: 1px 1px 3px 3px black;
+  //       transform: translateZ(10px);
+  //     }
+  //   }
 
-    
-
-  }
+  //   h2 {
+  //     font-size: 0.5em;
+  //     position: relative;
+  //   }
+  // }
 }
 
 #About {
