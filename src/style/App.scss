@@ -25,6 +25,10 @@
     @media (min-width: 901px) {
       margin-left: 240px;
     }
+
+    @media (max-width: 900px) {
+      margin-top: 64px;
+    }
   }
   // min-height: 100vh;
   // background-color: red;
@@ -127,6 +131,7 @@
     // left: 250px;
     // width: calc(100vw - 280px);
   }
+  margin: 1em;
   position: relative;
   // margin: 0 auto;
   gap: 1em;

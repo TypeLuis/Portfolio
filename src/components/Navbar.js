@@ -25,7 +25,6 @@ const Navbar = (props) => {
         <div>
 
             <nav className='navbar'>
-                <img className='profile-img' src={luis} />
 
                 <ul>
 
