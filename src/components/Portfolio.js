@@ -9,6 +9,8 @@ import animeImg2 from '../images/anime_search.jpg'
 import blogImg from '../images/myblog.png'
 import storeImg from '../images/store.png'
 
+import Modal from './Modal'
+
 
 const data_list = [
   {
@@ -99,7 +101,7 @@ const Portfolio = (props) => {
           )
         })}
 
-        {modal && functions.showModal(modal, setModal)}
+        {modal && <Modal modal={modal} setModal={setModal} />}
       </div>
     </div>
   )
