@@ -159,9 +159,12 @@
 
 /* The Close Button */
 .close {
+  position: relative;
+  top: -20px;
+
   color: white;
   float: right;
-  font-size: 1em;
+  font-size: 4em;
   font-weight: bold;
 }
 
@@ -176,6 +179,9 @@
   padding: 4px 25px;
   background-color: #c491f7;
   color: white;
+  a {
+    max-width: max-content;
+  }
 }
 
 .modal-body {

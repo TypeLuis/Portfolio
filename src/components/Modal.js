@@ -34,7 +34,7 @@ const Modal = (props) => {
                 <div  className="modal-content" >
                     <div className="modal-header">
                         <span onClick={() => { setModal('') }} className="close">x</span>
-                        <a href={modal.link}><h2>{modal.name}</h2></a>
+                        <a href={modal.link.site}><h2>{modal.name}</h2></a>
                     </div>
                     <div className="modal-body">
 
@@ -47,7 +47,12 @@ const Modal = (props) => {
 
                             {modal.skills.frontend.length > 0 &&
                                 <div>
-                                    <span data-text='*Github Link'>frontend:</span>
+
+                                    <a href={modal.link.frontend} target="_blank" rel="noopener noreferrer">
+
+                                        <span data-text='*Github Link'>frontend:</span>
+                                    </a>
+
                                     <ul>
                                         {modal.skills.frontend.map((item, i, {length}) => {
                                             return (
@@ -71,7 +76,11 @@ const Modal = (props) => {
 
                             {modal.skills.backend.length > 0 &&
                                 <div>
-                                    <span data-text='*Github Link'>backend: </span>
+                                    <a href={modal.link.backend} target="_blank" rel="noopener noreferrer">
+
+                                        <span data-text='*Github Link'>backend: </span>
+                                    </a>
+
                                     <ul>
                                         {modal.skills.backend.map((item, i, {length}) => {
                                             return (
@@ -137,7 +146,7 @@ const Modal = (props) => {
                 <div className="modal-content" >
                     <div className="modal-header">
                         <span onClick={() => { setModal('') }} className="close">x</span>
-                        <a href={modal.link}><h2>{modal.name}</h2></a>
+                        <a href={modal.link.site}><h2>{modal.name}</h2></a>
                     </div>
 
                     <div className='modal-body'>

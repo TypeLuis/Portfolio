@@ -25,7 +25,7 @@ export const Home = (props) => {
             <img src={bg} id='bg' />
             <img src={mountain} id='mountain' />
             <img src={road} id='road' />
-            <h2 id='text'>Moon Light</h2>
+            <h2 id='text'>Welcome To my portfolio!</h2>
             <img src={moon} id='moon' />
         </section>
     </div>

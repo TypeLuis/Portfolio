@@ -23,8 +23,9 @@ const About = (props) => {
                 <div className='icons'>
 
                     <ul>
-                        <li id='github'><a href='https://github.com/TypeLuis'><i><FaGithub /></i></a></li>
-                        <li id='linkedin'><a href='https://www.linkedin.com/in/luis-lopez-192565227/'><i><FaLinkedin /></i></a></li>
+                        <li id='github'><a href='https://github.com/TypeLuis' target="_blank" rel="noopener noreferrer"><i><FaGithub /></i></a></li>
+
+                        <li id='linkedin'><a href='https://www.linkedin.com/in/luis-lopez-192565227/' target="_blank" rel="noopener noreferrer"><i><FaLinkedin /></i></a></li>
                     </ul>
                 </div>
             </div>
