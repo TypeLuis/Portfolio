@@ -23,9 +23,9 @@ const data_list = [
     'gif': dodge,
     'image': dodgeImg,
     'link': {
-      'site' : 'https://pages.git.generalassemb.ly/typeluis/Dodge-the-Block/',
-      'frontend' : 'https://github.com/TypeLuis/Unit-4-project-frontend',
-      'backend' : 'https://github.com/TypeLuis/Unit-4-project-backend'
+      'site': 'https://dodge-the-block.netlify.app',
+      'frontend': 'https://github.com/TypeLuis/Dodge-The-Block',
+      'backend': ''
     },
     'skills': {
       'frontend': ['Javascript', 'HTML', 'CSS'],
@@ -40,9 +40,9 @@ const data_list = [
     'gif': dodge,
     'image': blogImg,
     'link': {
-      'site' : 'https://pages.git.generalassemb.ly/typeluis/Dodge-the-Block/',
-      'frontend' : 'https://github.com/TypeLuis/Unit-4-project-frontend',
-      'backend' : 'https://github.com/TypeLuis/Unit-4-project-backend'
+      'site': 'https://my-page-blog.netlify.app',
+      'frontend': 'https://github.com/TypeLuis/unit-two-frontend',
+      'backend': 'https://github.com/TypeLuis/unit-two-backend'
     },
     'skills': {
       'frontend': ['Javascript', 'HTML', 'CSS'],
@@ -57,9 +57,9 @@ const data_list = [
     'gif': animeGif,
     'image': animeImg,
     'link': {
-      'site' : 'https://anime-database-project.herokuapp.com/search',
-      'frontend' : 'https://github.com/TypeLuis/unit-3-solo-projects-frontend',
-      'backend' : 'https://github.com/TypeLuis/Unit-3-Solo-Projects-Backend'
+      'site': 'https://anime-query.netlify.app',
+      'frontend': 'https://github.com/TypeLuis/unit-3-solo-projects-frontend',
+      'backend': 'https://github.com/TypeLuis/Unit-3-Solo-Projects-Backend'
     },
     'skills': {
       'frontend': ['Javascript', 'HTML', 'CSS'],
@@ -74,9 +74,9 @@ const data_list = [
     'gif': storeGif,
     'image': storeImg,
     'link': {
-      'site' : 'https://store-search-project.herokuapp.com',
-      'frontend' : 'https://github.com/TypeLuis/Unit-4-project-frontend',
-      'backend' : 'https://github.com/TypeLuis/Unit-4-project-backend'
+      'site': 'https://store-search.netlify.app',
+      'frontend': 'https://github.com/TypeLuis/Unit-4-project-frontend',
+      'backend': 'https://github.com/TypeLuis/Unit-4-project-backend'
     },
     'skills': {
       'frontend': ['Javascript', 'HTML', 'CSS', 'SCSS'],
