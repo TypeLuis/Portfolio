@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import { useState, useRef } from 'react'
 import './style/App.scss'
 import { Home } from './components/Home';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
   const homeRef = useRef()
   const aboutRef = useRef()
   const portfolioRef = useRef()
+  const contactRef = useRef()
 
   function handleBackClick(e) {
     console.log(e.target.innerText)
@@ -33,6 +35,10 @@ function App() {
       case ' PORTFOLIO ':
         portfolioRef.current.scrollIntoView({ behavior: 'smooth' })
         break
+        
+      case ' CONTACT ':
+        contactRef.current.scrollIntoView({ behavior: 'smooth' })
+        break
 
     }
   }
@@ -45,6 +51,7 @@ function App() {
         <About aboutRef={aboutRef} />
         <Portfolio portfolioRef={portfolioRef} />
         <Skills skillRef={skillRef} />
+        <Contact contactRef={contactRef} />
       </div>
     </div>
   );
