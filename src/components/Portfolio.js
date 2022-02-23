@@ -2,12 +2,13 @@ import React from 'react';
 import { useState } from 'react'
 import functions from '../Functions/Functions'
 
-import dodge from '../images/DTB.gif'
+import dodgeGif from '../images/DTB.gif'
 import dodgeImg from '../images/dodge.png'
 
 import animeGif from '../images/AnimeSearch.gif'
 import animeImg from '../images/anime_search.jpg'
 
+import blogGif from '../images/MyBlog.gif'
 import blogImg from '../images/myblog.png'
 
 import storeGif from '../images/StoreSearch.gif'
@@ -20,7 +21,7 @@ const data_list = [
   {
     'name': 'Dodge The Block',
     'summary': 'Dodge the Block is a complex frontend game that uses EventListeners and Animations to move the blocks A user dodges incoming blocks while collecting the green blocks to increase currency for a shop that utilizes dom manipulation.',
-    'gif': dodge,
+    'gif': dodgeGif,
     'image': dodgeImg,
     'link': {
       'site': 'https://dodge-the-block.netlify.app',
@@ -37,7 +38,7 @@ const data_list = [
   {
     'name': 'MY BLOG',
     'summary': "A blog page that displays a user's post and youtube videos that uses the database to manipulate the DOM. Utilizes PostgreSQL and node.js for the backend and vanilla Javascript, HTML, CSS for the frontend. My blog is a blog post that allows a user to perform CRUD operation.",
-    'gif': dodge,
+    'gif': blogGif,
     'image': blogImg,
     'link': {
       'site': 'https://my-page-blog.netlify.app',
