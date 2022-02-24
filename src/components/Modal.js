@@ -16,22 +16,22 @@ const Modal = (props) => {
     }
 
     function calcHeight(el) {
-        console.log(el)
+        // console.log(el)
         const height = el.offsetHeight;
         setMenuHeight(height);
     }
-  return (
-    <div id="myModal" className="modal" >
-        <button onClick={() => {  console.log('hi'); setActiveMenu('video'); }}>video</button>
-    
-        <CSSTransition
+    return (
+        <div id="myModal" className="modal" >
+            {/* <button onClick={() => {  console.log('hi'); setActiveMenu('video'); }}>video</button> */}
+
+            <CSSTransition
                 in={activeMenu === 'main'}
                 timeout={500}
                 // gives this the secondary menu because it's transitioning from primary
                 classNames="menu-primary"
                 unmountOnExit
                 onEnter={calcHeight}>
-                <div  className="modal-content" >
+                <div className="modal-content" >
                     <div className="modal-header">
                         <span onClick={() => { setModal('') }} className="close">x</span>
                         <a href={modal.link.site}><h2>{modal.name}</h2></a>
@@ -54,19 +54,19 @@ const Modal = (props) => {
                                     </a>
 
                                     <ul>
-                                        {modal.skills.frontend.map((item, i, {length}) => {
+                                        {modal.skills.frontend.map((item, i, { length }) => {
                                             return (
 
                                                 <>
-                                                {length === i+1 ?
-                                                
-                                                <li>{item}</li>
-                                                
-                                                :
-                                                <li>{item}, </li>
-                                            
-                                                }
-                                                
+                                                    {length === i + 1 ?
+
+                                                        <li>{item}</li>
+
+                                                        :
+                                                        <li>{item}, </li>
+
+                                                    }
+
                                                 </>
                                             )
                                         })}
@@ -82,19 +82,19 @@ const Modal = (props) => {
                                     </a>
 
                                     <ul>
-                                        {modal.skills.backend.map((item, i, {length}) => {
+                                        {modal.skills.backend.map((item, i, { length }) => {
                                             return (
 
                                                 <>
-                                                {length === i+1 ?
-                                                
-                                                <li>{item}</li>
-                                                
-                                                :
-                                                <li>{item}, </li>
-                                            
-                                                }
-                                                
+                                                    {length === i + 1 ?
+
+                                                        <li>{item}</li>
+
+                                                        :
+                                                        <li>{item}, </li>
+
+                                                    }
+
                                                 </>
 
                                             )
@@ -107,19 +107,19 @@ const Modal = (props) => {
                                 <div>
                                     <span>libraries:</span>
                                     <ul>
-                                        {modal.skills.libraries.map((item, i, {length}) => {
+                                        {modal.skills.libraries.map((item, i, { length }) => {
                                             return (
 
                                                 <>
-                                                {length === i+1 ?
-                                                
-                                                <li>{item}</li>
-                                                
-                                                :
-                                                <li>{item}, </li>
-                                            
-                                                }
-                                                
+                                                    {length === i + 1 ?
+
+                                                        <li>{item}</li>
+
+                                                        :
+                                                        <li>{item}, </li>
+
+                                                    }
+
                                                 </>
                                             )
                                         })}
@@ -131,12 +131,12 @@ const Modal = (props) => {
 
                     </div>
                 </div>
-        </CSSTransition>
+            </CSSTransition>
 
 
 
 
-        <CSSTransition
+            <CSSTransition
                 in={activeMenu === 'video'}
                 timeout={500}
                 // gives this the secondary menu because it's transitioning from primary
@@ -151,13 +151,13 @@ const Modal = (props) => {
 
                     <div className='modal-body'>
 
-                        <button onClick={()=>{setActiveMenu('main')}}>go Back</button>
+                        <button onClick={() => { setActiveMenu('main') }}>go Back</button>
                         <h1>klk Mani</h1>
                     </div>
                 </div>
-        </CSSTransition>
-    </div>
-  )
+            </CSSTransition>
+        </div>
+    )
 }
 
 export default Modal

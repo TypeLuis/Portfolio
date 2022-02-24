@@ -58,11 +58,16 @@ section img {
 
 #text {
   position: absolute;
+  top: 10px;
+  // margin-top: 1em;
   color: #fff;
-  font-size: clamp(3em, 10vw, 10em);
+  font-size: clamp(3em, 10vw, 7em);
   //   font-size: 5em;
   /* b: 500px; */
   /* left: 40vw; */
+  @media (max-width: 1280px) and (min-height: 720px) {
+    margin-top: 200px;
+  }
   margin-top: 40vh;
   z-index: 1;
 }
