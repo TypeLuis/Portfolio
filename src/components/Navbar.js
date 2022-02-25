@@ -11,50 +11,51 @@ const Navbar = (props) => {
     const [burger, setBurger] = useState(false)
     const [content, setContent] = useState(false)
 
+    setTimeout(() => {
+
+        window.onclick = function (e) {
+            if (e.target.classList[0] != 'nav-event' && burger === true) {
+                setContent(false)
+
+                setTimeout(() => { setBurger(false) }, 450)
+            }
+        }
+    }, 200)
     const handleClick = () => {
         if (burger === true) {
-            setContent(!content)
-            setTimeout(() => { setBurger(!burger) }, 450)
         }
         else {
-            setBurger(!burger)
-            setContent(!content)
+            setBurger(true)
+            setContent(true)
         }
     }
     return (
         <div>
 
-            <nav className='navbar'>
+            <nav className='nav-event navbar'>
 
                 <ul>
 
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#00ade1'}}>
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
                         <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
                     </li>
 
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#FF807D'}}>
-                        <span href='#'  data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
+                        <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
                     </li>
 
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#F6F792'}}>
-                        <span href='#' data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#F6F792' }}>
+                        <span data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
                     </li>
 
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#9EF779'}}>
-                        <span href='#' data-text="&nbsp;Skills&nbsp;">&nbsp;Skills&nbsp;</span>
-                    </li>
-                    
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{"--clr" : '#86F7EC'}}>
-                        <span href='#' data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</span>
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#9EF779' }}>
+                        <span data-text="&nbsp;Skills&nbsp;">&nbsp;Skills&nbsp;</span>
                     </li>
 
-                    {/* <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Home</li></Link>
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#86F7EC' }}>
+                        <span data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</span>
+                    </li>
 
-                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>About</li></Link>
-
-                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Portfolio</li></Link>
-
-                    <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Skills</li></Link> */}
 
 
                 </ul>
@@ -62,22 +63,37 @@ const Navbar = (props) => {
 
                 <span className='portfolio-name'>Luis Lopez</span>
 
-                <span onClick={handleClick} className='hamburger'>
+                <span onClick={handleClick} className='nav-event hamburger'>
                     <FontAwesomeIcon
+                        className='nav-event'
                         icon={faBars}
                     />
                 </span>
 
                 {burger &&
 
-                    <div className={`burger-content ${String(content)}`}>
+                    <div className={`nav-event burger-content ${String(content)}`}>
 
-                        <ol>
-                            <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>About</li></Link>
+                        <ol className='nav-event'>
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
+                                <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
+                            </li>
 
-                            <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Portfolio</li></Link>
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
+                                <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
+                            </li>
 
-                            <Link to='/'><li onClick={(e) => { props.handleBackClick(e); }}>Skills</li></Link>
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#F6F792' }}>
+                                <span data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
+                            </li>
+
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#9EF779' }}>
+                                <span data-text="&nbsp;Skills&nbsp;">&nbsp;Skills&nbsp;</span>
+                            </li>
+
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#86F7EC' }}>
+                                <span data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</span>
+                            </li>
 
                         </ol>
 

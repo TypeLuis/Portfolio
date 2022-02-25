@@ -12,7 +12,6 @@ export const Home = (props) => {
     let road = document.getElementById('road')
     let text = document.getElementById('text')
     const value = window.scrollY
-    console.log(value)
 
     bg.style.top = value * 0.5 + 'px'
     moon.style.left = -value * 0.5 + 'px'
