@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import luis from '../images/Luis.jpg';
 import { Link } from 'react-router-dom';
 
@@ -32,13 +32,13 @@ const Navbar = (props) => {
     return (
         <div>
 
-            <nav className='nav-event navbar'>
+            <nav ref={props.NavRef} className='nav-event navbar'>
 
                 <ul>
 
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
+                    {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
                         <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
-                    </li>
+                    </li> */}
 
                     <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
                         <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
@@ -75,9 +75,9 @@ const Navbar = (props) => {
                     <div className={`nav-event burger-content ${String(content)}`}>
 
                         <ol className='nav-event'>
-                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
+                            {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
                                 <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
-                            </li>
+                            </li> */}
 
                             <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
                                 <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>

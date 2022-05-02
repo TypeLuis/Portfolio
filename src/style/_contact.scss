@@ -1,132 +1,126 @@
-#Contact{
+#Contact {
+  form {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    .textbox {
+      position: relative;
+      width: Min(90%, 600px);
+      box-shadow: inset 0 0 3px 3px black;
+      //   overflow: hidden;
+      background-color: #f6f792;
+      font-size: 20px;
+      padding: 8px 0;
+      margin: 8px 0;
 
-    form {
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        .textbox{
-            position: relative;
-            width: Min(90%, 600px);
-            box-shadow: inset 0 0 3px 3px black;
-            //   overflow: hidden;
-            background-color: #F6F792;
-            font-size: 20px;
-            padding: 8px 0;
-            margin: 8px 0;
-
-            label{
-                position: relative;
-
-                &::before{
-                    
-                    content: "";
-                    position: absolute;
-                    left: 5px;
-                    top: 0;
-                    bottom: 0;
-                    width: 25px;
-                }
-            }
-
-
-            input{
-                position: relative;
-                left: -7%;
-                border: none;
-                outline: none;
-                background: none !important;
-                color: #000;
-                font-size: 18px;
-                width: Min(80%, 600px);
-                //   float: left;
-                padding-inline-start: Min(20%, 70px);
-                margin: 0 10px;
-
-                // prevents autofill to change background color 
-                -webkit-background-clip: text !important;
-            }
-        }
-
-        .name{
-            label::before{
-
-                background: url(../images/user.svg) center / contain no-repeat;
-            }
-
-        }
-
-        .email{
-            label::before{
-
-                background: url(../images/email.svg) center / contain no-repeat;
-            }
-        }
-
-        .message{
-            height: 10rem;
-        }
-    }
-    button{
-        margin: 1em;
+      label {
         position: relative;
-        cursor: pointer;
-        border: none;
-        background: none;
-        padding: 10px 30px;
-        color: #21ebff;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 20px;
-        transition: 0.5s;
-        overflow: hidden;
-        width: Min(95%, 400px);
-        -webkit-box-reflect: below 5px linear-gradient(transparent, #0003);
 
-        &:hover{
-            background: #21ebff;
-            color: #111;
-            box-shadow: inset 0 0 5px 10px #0a2a43, 0 0 1.5em #21ebff;
-            transition-delay: 0.5s;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 5px;
+          top: 0;
+          bottom: 0;
+          width: 25px;
         }
-        
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 10px;
-            height: 10px;
-            border-top: 2px solid #21ebff;
-            border-left: 2px solid #21ebff;
-            transition: 0.5s;
-            transition-delay: 0.5s;
-        }
-        &:hover::before{
-            width: 100%;
-            height: 100%;
-            transition-delay: 0s;
-        }
-        
-        &::after{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 10px;
-            height: 10px;
-            border-bottom: 2px solid #21ebff;
-            border-right: 2px solid #21ebff;
-            transition: 0.5s;
-            transition-delay: 0.5s;
-        }
-        &:hover::after{
-            width: 100%;
-            height: 100%;
-            transition-delay: 0s;
-        }
+      }
+
+      input {
+        position: relative;
+        left: -7%;
+        border: none;
+        outline: none;
+        background: none !important;
+        color: #000;
+        font-size: 18px;
+        width: Min(80%, 600px);
+        //   float: left;
+        padding-inline-start: Min(20%, 70px);
+        margin: 0 10px;
+
+        // prevents autofill to change background color
+        -webkit-background-clip: text !important;
+      }
     }
+
+    .name {
+      label::before {
+        background: url(../images/user.svg) center / contain no-repeat;
+      }
+    }
+
+    .email {
+      label::before {
+        background: url(../images/email.svg) center / contain no-repeat;
+      }
+    }
+
+    .message {
+      height: 10rem;
+    }
+  }
+  button {
+    margin: 1em;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 10px 30px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+    width: Min(95%, 400px);
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0003);
+
+    &:hover {
+      background: #21ebff;
+      color: #111;
+      box-shadow: inset 0 0 5px 10px #0a2a43, 0 0 1.5em #21ebff;
+      transition-delay: 0.5s;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #21ebff;
+      border-left: 2px solid #21ebff;
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+    &:hover::before {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid #21ebff;
+      border-right: 2px solid #21ebff;
+      transition: 0.5s;
+      transition-delay: 0.5s;
+    }
+    &:hover::after {
+      width: 100%;
+      height: 100%;
+      transition-delay: 0s;
+    }
+  }
 }

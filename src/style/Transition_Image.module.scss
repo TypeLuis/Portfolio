@@ -1,0 +1,261 @@
+// https://www.youtube.com/watch?v=o_hRhTZORNY
+
+@mixin fade_in($speed) {
+  z-index: 100;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: $speed ease-in;
+
+  &.appear {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.mainImg {
+  overflow: hidden;
+  // padding-block: 2rem;
+}
+
+.banner {
+  height: 150vh;
+  @media screen and (max-width: 790px) {
+    height: 120vh;
+    // height: 110vh;
+  }
+  background-color: #181a1b;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  img:first-of-type,
+  img:last-of-type {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    // transform: scale();
+    object-fit: cover;
+    // animation-delay: 250ms;
+    // perspective: 100px;
+  }
+
+  img:first-of-type {
+    @media screen and (min-width: 851px) {
+      animation: slide1 8s linear infinite,
+        zoom-in-big 4s cubic-bezier(0.01, 0.62, 1, 0.82) infinite;
+    }
+    @media screen and (max-width: 850px) {
+      animation: slide1-small 8s linear infinite,
+        zoom-in-small 4s cubic-bezier(0.01, 0.62, 1, 0.82) infinite;
+      //   width: 100vh;
+    }
+  }
+  img:last-of-type {
+    @media screen and (min-width: 851px) {
+      animation: slide2 8s linear infinite,
+        zoom-in-big 4s cubic-bezier(0.01, 0.62, 1, 0.82) infinite;
+    }
+    @media screen and (max-width: 850px) {
+      animation: slide2-small 8s linear infinite,
+        zoom-in-small 4s cubic-bezier(0.01, 0.62, 1, 0.82) infinite;
+    }
+  }
+
+  @keyframes zoom-in-small {
+    0% {
+      transform: scale(1) translate(-50%, -50%);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.15) translate(-50%, -50%);
+    }
+  }
+
+  @keyframes zoom-in-big {
+    0% {
+      opacity: 0;
+      width: 100%;
+    }
+
+    5% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      width: 120%;
+    }
+  }
+
+  @keyframes zoom-in {
+    0% {
+      opacity: 0;
+      width: 100%;
+    }
+
+    5% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      width: 120%;
+      //   @media screen and (max-width: 790px) {
+      //     width: 150%;
+      //   }
+    }
+  }
+
+  .text_box {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    @media screen and (max-width: 781px) {
+      top: 45%;
+    }
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+      margin: 0;
+      font-size: Clamp(30px, 8vw, 60px);
+      // display: flex;
+      width: Min(90vw, 10em);
+    }
+
+    p {
+      font-size: Clamp(18px, 8vw, 25px);
+      text-align: center;
+      width: Min(85vw, 60ch);
+      line-height: 40px;
+    }
+
+    button {
+      margin-top: 1rem;
+      cursor: pointer !important;
+      width: Min(95%, 150px);
+      height: 50px;
+      background: #fff;
+
+      border: none;
+      color: #000;
+      padding: 5px;
+
+      font-size: 18px;
+      &:hover {
+        filter: brightness(0.8);
+        //   box-shadow: inset 0 0 10px 1px #000;
+      }
+    }
+  }
+}
+
+.text_box {
+  h1.fade__in {
+    @include fade_in(350ms);
+  }
+
+  p.fade__in {
+    @include fade_in(450ms);
+  }
+
+  button.fade__in {
+    @include fade_in(550ms);
+    transition: 550ms ease-in, filter 200ms;
+  }
+}
+
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: visible;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes slide1-small {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: visible;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes slide2-small {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}

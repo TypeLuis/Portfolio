@@ -9,7 +9,8 @@ const Contact = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await emailjs.sendForm('service_f56mnkf', 'template_wew05jt', e.target, env.emailjsUserID);
+        const response = await emailjs.sendForm(env.gmailID, env.templateId, e.target, env.emailjsUserID);
+        console.log(response)
         setResponseStatus(response.status)
         e.target.reset()
     }

@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 
 function App() {
 
+  const NavRef = useRef()
   const skillRef = useRef()
   const homeRef = useRef()
   const aboutRef = useRef()
@@ -20,9 +21,9 @@ function App() {
     console.log(e.target.innerText)
     switch (e.target.innerText) {
 
-      case ' HOME ':
-        homeRef.current.scrollIntoView({ behavior: 'smooth' })
-        break
+      // case ' HOME ':
+      //   homeRef.current.scrollIntoView({ behavior: 'smooth' })
+      //   break
 
       case ' ABOUT ':
         aboutRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -44,11 +45,10 @@ function App() {
   }
   return (
     <div style={{ overflowX: 'hidden' }} className="App">
-      <Navbar handleBackClick={handleBackClick} />
-      <div id='spacer'>
+      <Navbar NavRef={NavRef} handleBackClick={handleBackClick} />
+      <About aboutRef={aboutRef} NavRef={NavRef} portfolioRef={portfolioRef} />
 
-        <Home homeRef={homeRef} />
-        <About aboutRef={aboutRef} />
+      <div id='spacer'>
         <Portfolio portfolioRef={portfolioRef} />
         <Skills skillRef={skillRef} />
         <Contact contactRef={contactRef} />

@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 .navbar {
-  background-color: #c491f7;
+  background-color: #0a2a43;
   z-index: 100;
   @media (min-width: 901px) {
+    position: relative;
+    top: 100%;
+    transition: top 0.5s linear;
+    border-right: 1px solid pink;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -110,46 +116,46 @@
       z-index: 100;
 
       ol {
-      font-family: "Poppins", sans-serif;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-      list-style: none;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        list-style: none;
 
-      li {
-        position: relative;
-
-        span {
-          cursor: pointer;
+        li {
           position: relative;
-          font-size: 1.5em;
-          text-decoration: none;
-          line-height: 1em;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          color: transparent;
-          -webkit-text-stroke: 1px white;
 
-          &::before {
-            content: attr(data-text);
-            position: absolute;
-            color: var(--clr);
-            width: 0%;
-            overflow: hidden;
-            transition: 1s;
-            border-right: 6px solid var(--clr);
-            -webkit-text-stroke: 1px var(--clr);
-          }
+          span {
+            cursor: pointer;
+            position: relative;
+            font-size: 1.5em;
+            text-decoration: none;
+            line-height: 1em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
 
-          &:hover::before {
-            width: 100%;
-            filter: drop-shadow(0 0 25px var(--clr));
+            &::before {
+              content: attr(data-text);
+              position: absolute;
+              color: var(--clr);
+              width: 0%;
+              overflow: hidden;
+              transition: 1s;
+              border-right: 6px solid var(--clr);
+              -webkit-text-stroke: 1px var(--clr);
+            }
+
+            &:hover::before {
+              width: 100%;
+              filter: drop-shadow(0 0 25px var(--clr));
+            }
           }
         }
       }
-    }
 
       // li {
       //   list-style-type: none;
@@ -188,4 +194,8 @@
       }
     }
   }
+}
+
+.navbar.appear {
+  top: 0;
 }
