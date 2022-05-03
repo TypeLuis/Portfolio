@@ -8,6 +8,7 @@
 @import "./home";
 @import "./contact";
 @import "./Transition_Image.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 .App {
   text-align: center;
@@ -28,25 +29,43 @@
   justify-content: center;
   height: max-content;
   min-height: 100vh;
+  position: relative;
   // border-bottom: 1px solid gray;
+
+  .heading {
+    color: #444649;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    // margin: 0 auto;
+    position: relative;
+    &::after {
+      content: "";
+      position: relative;
+      border-radius: 3px;
+
+      width: 70%;
+      margin: 0 auto;
+      height: 3px;
+      background-color: #444649;
+      box-shadow: 1px 1px 0.5px 0.5px black;
+    }
+  }
 
   @media (min-width: 901px) {
     width: 100%;
-    .heading {
-      display: flex;
-    }
+
     .details {
       @include icons(120px, 126px);
     }
   }
 
   @media (max-width: 900px) {
-    .heading {
-      display: flex;
-      margin-top: 1em;
-      margin-left: 0.25em;
-    }
-
     #About-Heading {
       margin-top: 2.5em;
     }

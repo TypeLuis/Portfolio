@@ -6,6 +6,7 @@ import * as SimpleIcons from "react-icons/si"
 
 
 
+
 const dataList = [
   {
     title: 'Python',
@@ -36,6 +37,13 @@ const dataList = [
     icon: Devicons.DiCss3,
     description: 'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. '
   },
+
+  {
+    title: 'Next',
+    icon: SimpleIcons.SiNextdotjs,
+    description: 'Next.js is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering and generating static websites.'
+  },
+  
 
   {
     title: 'SASS',
