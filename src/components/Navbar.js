@@ -36,13 +36,13 @@ const Navbar = (props) => {
 
                 <ul>
 
-                    {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
                         <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
-                    </li> */}
-
-                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
-                        <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
                     </li>
+
+                    {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
+                        <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
+                    </li> */}
 
                     <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#F6F792' }}>
                         <span data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
@@ -75,13 +75,13 @@ const Navbar = (props) => {
                     <div className={`nav-event burger-content ${String(content)}`}>
 
                         <ol className='nav-event'>
-                            {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#00ade1' }}>
                                 <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
-                            </li> */}
-
-                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
-                                <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
                             </li>
+
+                            {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
+                                <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
+                            </li> */}
 
                             <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#F6F792' }}>
                                 <span data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>

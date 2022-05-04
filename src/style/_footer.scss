@@ -1,0 +1,27 @@
+footer {
+  margin-bottom: 1.5em;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .info {
+    font-weight: bold;
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 901px) {
+  footer {
+    width: 100%;
+
+    @include icons(80px, 83px);
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    @include icons(60px, 63px);
+  }
+}

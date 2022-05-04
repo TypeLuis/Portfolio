@@ -14,6 +14,9 @@ import blogImg from '../images/myblog.png'
 import storeGif from '../images/StoreSearch.gif'
 import storeImg from '../images/store.png'
 
+// import nextGif from '../images/NextSearch.gif'
+import nextimg from '../images/Next.png'
+
 import Modal from './Modal'
 
 
@@ -32,6 +35,23 @@ const data_list = [
       'frontend': ['Javascript', 'HTML', 'CSS'],
       'backend': [],
       'libraries': [],
+    }
+  },
+
+  {
+    'name': 'Nextjs Store (incomplete)',
+    'summary': "Nextjs Store is a full stack web application that utilizes Nextjs. Inspired by 'https://aylabag.com', creating components as close as 1 to 1 as possible",
+    // 'gif': storeGif,
+    'image': nextimg,
+    'link': {
+      'site': 'https://shopify-nextjs-app.netlify.app',
+      'frontend': 'https://github.com/TypeLuis/Nextjs-Shopify-Project',
+      'backend': ''
+    },
+    'skills': {
+      'frontend': ['Javascript', 'HTML', 'CSS', 'SCSS'],
+      'backend': [],
+      'libraries': ['Next.js', 'MUI'],
     }
   },
 
@@ -84,7 +104,9 @@ const data_list = [
       'backend': ['PostgreSQL', 'Python'],
       'libraries': ['Flask', 'React.js', 'Axios', 'Stripe', 'Beautiful Soup', 'Dotenv'],
     }
-  }
+  },
+
+  
 ]
 
 const Portfolio = (props) => {

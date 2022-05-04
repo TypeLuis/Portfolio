@@ -4,9 +4,9 @@
 @import "./modal";
 @import "./skills";
 @import "./portfolio";
-@import "./about";
 @import "./home";
 @import "./contact";
+@import "./footer";
 @import "./Transition_Image.module.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
@@ -54,14 +54,6 @@
       height: 3px;
       background-color: #444649;
       box-shadow: 1px 1px 0.5px 0.5px black;
-    }
-  }
-
-  @media (min-width: 901px) {
-    width: 100%;
-
-    .details {
-      @include icons(120px, 126px);
     }
   }
 

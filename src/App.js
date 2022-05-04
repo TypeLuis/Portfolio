@@ -1,19 +1,18 @@
 import React from 'react';
-import About from './components/About';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import { useState, useRef } from 'react'
 import './style/App.scss'
-import { Home } from './components/Home';
+import Home from './components/Home';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
 
   const NavRef = useRef()
   const skillRef = useRef()
   const homeRef = useRef()
-  const aboutRef = useRef()
   const portfolioRef = useRef()
   const contactRef = useRef()
 
@@ -21,13 +20,13 @@ function App() {
     console.log(e.target.innerText)
     switch (e.target.innerText) {
 
-      // case ' HOME ':
-      //   homeRef.current.scrollIntoView({ behavior: 'smooth' })
-      //   break
-
-      case ' ABOUT ':
-        aboutRef.current.scrollIntoView({ behavior: 'smooth' })
+      case ' HOME ':
+        homeRef.current.scrollIntoView({ behavior: 'smooth' })
         break
+
+      // case ' ABOUT ':
+      //   aboutRef.current.scrollIntoView({ behavior: 'smooth' })
+      //   break
 
       case ' SKILLS ':
         skillRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -46,12 +45,13 @@ function App() {
   return (
     <div style={{ overflowX: 'hidden' }} className="App">
       <Navbar NavRef={NavRef} handleBackClick={handleBackClick} />
-      <About aboutRef={aboutRef} NavRef={NavRef} portfolioRef={portfolioRef} />
+      <Home homeRef={homeRef} NavRef={NavRef} portfolioRef={portfolioRef} />
 
       <div id='spacer'>
         <Portfolio portfolioRef={portfolioRef} />
         <Skills skillRef={skillRef} />
         <Contact contactRef={contactRef} />
+        <Footer />
       </div>
     </div>
   );

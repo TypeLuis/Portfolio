@@ -14,13 +14,12 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 100;
     ul {
       display: flex;
       list-style: none;
 
-
-      a{
-        
+      a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,7 +62,7 @@
 
         &:nth-child(2)::before {
           // background-color: #d35400;
-          background-color: #C491F7;
+          background-color: #c491f7;
         }
 
         &:nth-child(1):hover::before {
@@ -72,15 +71,23 @@
           transform: scale(1.2);
         }
 
+        &:nth-child(1):hover i {
+          transform: scale(1.2);
+        }
+        &:nth-child(2):hover i {
+          transform: scale(1.2);
+        }
+
         &:nth-child(2):hover::before {
           filter: blur(4px);
           // box-shadow: 0 0 15 #d35400;
-          box-shadow: 0 0 15 #C491F7;
+          box-shadow: 0 0 15 #c491f7;
           transform: scale(1.2);
         }
       }
       i {
         margin-top: 5px;
+        transition: 500ms linear;
       }
     }
   }
