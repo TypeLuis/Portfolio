@@ -1,21 +1,12 @@
 // import React from 'react'
 import { CSSTransition } from 'react-transition-group';
 import React, { useState, useEffect, useRef, useContext } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import GADocuments from '../images/Certificate-of-Completion-Luis_Lopez.pdf'
 
 
 const Modal = (props) => {
     const [activeMenu, setActiveMenu] = useState(props.menu);
     const [menuHeight, setMenuHeight] = useState(null);
-
-    const [numPage, setNumPage] = useState(null)
-    const [pageNumber, SetPageNumber] = useState(1)
-    
-    const onDocumentLoadSuccess = ({numPages}) => {
-        setNumPage(numPage)
-        SetPageNumber(1)
-    }
 
     const modal = props.modal
     const setModal = props.setModal
@@ -144,29 +135,6 @@ const Modal = (props) => {
             </CSSTransition>
 
 
-
-            <CSSTransition
-                in={activeMenu === 'GADoc'}
-                timeout={500}
-                classNames="menu-primary"
-                unmountOnExit
-                onEnter={calcHeight}>
-                <div className="modal-content" >
-                    <div className="modal-header">
-                        <span onClick={() => { setModal('') }} className="close">x</span>
-                        <a href={modal.link.site}><h2>{modal.name}</h2></a>
-                    </div>
-
-                    <div className='modal-body'>
-
-                        <Document file={GADocuments} onLoadSuccess={onDocumentLoadSuccess} >
-                            <Page height='600px' pageNumber={pageNumber} /> 
-                        </Document>
-
-
-                    </div>
-                </div>
-            </CSSTransition>
         </div>
     )
 }
