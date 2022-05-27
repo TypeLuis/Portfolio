@@ -35,7 +35,7 @@ window.env = {
   "npm_config_noproxy": "",
   "npm_config_prefix": "C:\\Users\\13476\\AppData\\Roaming\\npm",
   "npm_config_userconfig": "C:\\Users\\13476\\.npmrc",
-  "npm_config_user_agent": "npm/8.8.0 node/v16.13.1 win32 x64 workspaces/false",
+  "npm_config_user_agent": "npm/8.10.0 node/v16.13.1 win32 x64 workspaces/false",
   "npm_execpath": "C:\\Users\\13476\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
   "npm_lifecycle_event": "start",
   "npm_lifecycle_script": "react-dotenv && react-scripts start",
@@ -74,5 +74,5 @@ window.env = {
   "windir": "C:\\WINDOWS",
   "WSLENV": "WT_SESSION::WT_PROFILE_ID",
   "WT_PROFILE_ID": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-  "WT_SESSION": "335fdb94-a03f-456e-b1de-fbc30949a30e"
+  "WT_SESSION": "220d51d2-1222-4de5-8913-dce799eb26c8"
 };

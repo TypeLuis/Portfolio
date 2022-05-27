@@ -155,7 +155,7 @@ const Portfolio = (props) => {
           )
         })}
 
-        {modal && <Modal modal={modal} setModal={setModal} />}
+        {modal && <Modal menu='main' modal={modal} setModal={setModal} />}
       </div>
     </div>
   )

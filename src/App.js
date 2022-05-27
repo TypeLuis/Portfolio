@@ -15,6 +15,7 @@ function App() {
   const homeRef = useRef()
   const portfolioRef = useRef()
   const contactRef = useRef()
+  const FooterRef = useRef()
 
   function handleBackClick(e) {
     console.log(e.target.innerText)
@@ -40,6 +41,10 @@ function App() {
         contactRef.current.scrollIntoView({ behavior: 'smooth' })
         break
 
+      case ' INFO ':
+        FooterRef.current.scrollIntoView({ behavior: 'smooth' })
+        break
+
     }
   }
   return (
@@ -51,7 +56,7 @@ function App() {
         <Portfolio portfolioRef={portfolioRef} />
         <Skills skillRef={skillRef} />
         <Contact contactRef={contactRef} />
-        <Footer />
+        <Footer FooterRef={FooterRef} />
       </div>
     </div>
   );

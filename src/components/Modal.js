@@ -1,10 +1,21 @@
 // import React from 'react'
 import { CSSTransition } from 'react-transition-group';
 import React, { useState, useEffect, useRef, useContext } from 'react';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import GADocuments from '../images/Certificate-of-Completion-Luis_Lopez.pdf'
+
 
 const Modal = (props) => {
-    const [activeMenu, setActiveMenu] = useState('main');
+    const [activeMenu, setActiveMenu] = useState(props.menu);
     const [menuHeight, setMenuHeight] = useState(null);
+
+    const [numPage, setNumPage] = useState(null)
+    const [pageNumber, SetPageNumber] = useState(1)
+    
+    const onDocumentLoadSuccess = ({numPages}) => {
+        setNumPage(numPage)
+        SetPageNumber(1)
+    }
 
     const modal = props.modal
     const setModal = props.setModal
@@ -16,7 +27,6 @@ const Modal = (props) => {
     }
 
     function calcHeight(el) {
-        // console.log(el)
         const height = el.offsetHeight;
         setMenuHeight(height);
     }
@@ -135,12 +145,10 @@ const Modal = (props) => {
 
 
 
-
             <CSSTransition
-                in={activeMenu === 'video'}
+                in={activeMenu === 'GADoc'}
                 timeout={500}
-                // gives this the secondary menu because it's transitioning from primary
-                classNames="menu-secondary"
+                classNames="menu-primary"
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="modal-content" >
@@ -151,8 +159,11 @@ const Modal = (props) => {
 
                     <div className='modal-body'>
 
-                        <button onClick={() => { setActiveMenu('main') }}>go Back</button>
-                        <h1>klk Mani</h1>
+                        <Document file={GADocuments} onLoadSuccess={onDocumentLoadSuccess} >
+                            <Page height='600px' pageNumber={pageNumber} /> 
+                        </Document>
+
+
                     </div>
                 </div>
             </CSSTransition>

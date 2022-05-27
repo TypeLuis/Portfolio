@@ -40,9 +40,6 @@ const Navbar = (props) => {
                         <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
                     </li>
 
-                    {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
-                        <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
-                    </li> */}
 
                     <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#F6F792' }}>
                         <span data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
@@ -56,6 +53,9 @@ const Navbar = (props) => {
                         <span data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</span>
                     </li>
 
+                    <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
+                    <span data-text="&nbsp;Info&nbsp;">&nbsp;Info&nbsp;</span>
+                    </li>
 
 
                 </ul>
@@ -79,9 +79,6 @@ const Navbar = (props) => {
                                 <span data-text="&nbsp;Home&nbsp;">&nbsp;Home&nbsp;</span>
                             </li>
 
-                            {/* <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
-                                <span data-text="&nbsp;About&nbsp;">&nbsp;About&nbsp;</span>
-                            </li> */}
 
                             <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#F6F792' }}>
                                 <span data-text="&nbsp;Portfolio&nbsp;">&nbsp;Portfolio&nbsp;</span>
@@ -95,6 +92,9 @@ const Navbar = (props) => {
                                 <span data-text="&nbsp;Contact&nbsp;">&nbsp;Contact&nbsp;</span>
                             </li>
 
+                            <li onClick={(e) => { props.handleBackClick(e); }} style={{ "--clr": '#FF807D' }}>
+                                <span data-text="&nbsp;Info&nbsp;">&nbsp;Info&nbsp;</span>
+                            </li>
                         </ol>
 
                     </div>
