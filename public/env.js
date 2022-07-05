@@ -12,6 +12,8 @@ window.env = {
   "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
   "EDITOR": "notepad.exe",
   "emailjsUserID": "user_tUz3TSgEw0qE3Ag3DhlbQ",
+  "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+  "FPS_BROWSER_USER_PROFILE_STRING": "Default",
   "HOME": "C:\\Users\\typel",
   "HOMEDRIVE": "C:",
   "HOMEPATH": "\\Users\\typel",
@@ -21,7 +23,7 @@ window.env = {
   "NODE": "C:\\Program Files\\nodejs\\node.exe",
   "NODE_EXE": "C:\\Program Files\\nodejs\\\\node.exe",
   "NPM_CLI_JS": "C:\\Users\\typel\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
-  "npm_command": "start",
+  "npm_command": "run-script",
   "npm_config_cache": "C:\\Users\\typel\\AppData\\Local\\npm-cache",
   "npm_config_globalconfig": "C:\\Users\\typel\\AppData\\Roaming\\npm\\etc\\npmrc",
   "npm_config_global_prefix": "C:\\Users\\typel\\AppData\\Roaming\\npm",
@@ -70,5 +72,5 @@ window.env = {
   "windir": "C:\\Windows",
   "WSLENV": "WT_SESSION::WT_PROFILE_ID",
   "WT_PROFILE_ID": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-  "WT_SESSION": "84b6f7a7-2519-4541-87d0-3fb9e03c8e29"
+  "WT_SESSION": "da913789-8226-49f5-96cf-437ead67c767"
 };

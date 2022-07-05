@@ -39,7 +39,7 @@ const data_list = [
   },
 
   {
-    'name': 'Nextjs Store (incomplete)',
+    'name': 'Nextjs Store (In progress)',
     'summary': "Nextjs Store is a full stack web application that utilizes Nextjs. Inspired by 'https://aylabag.com', creating components as close as 1 to 1 as possible",
     // 'gif': storeGif,
     'image': nextimg,
@@ -106,7 +106,7 @@ const data_list = [
     }
   },
 
-  
+
 ]
 
 const Portfolio = (props) => {
