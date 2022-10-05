@@ -21,6 +21,7 @@ const Modal = (props) => {
         const height = el.offsetHeight;
         setMenuHeight(height);
     }
+    console.log(modal.summary.split('⋆'))
     return (
         <div id="myModal" className="modal" >
             {/* <button onClick={() => {  console.log('hi'); setActiveMenu('video'); }}>video</button> */}

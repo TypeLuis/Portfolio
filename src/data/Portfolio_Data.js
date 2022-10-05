@@ -17,8 +17,8 @@ const data_list = [
     {
       'name': 'Dodge The Block',
       'summary': `
-        ⋆ Made significant contributions to the successful completion of the project by developing complex frontend game features. \n
-        ⋆ Used Vanilla JavaScript to create a dodge game with a shop that utilized DOM manipulation. \n 
+        ⋆ Made significant contributions to the successful completion of the project by developing complex frontend game features.
+        ⋆ Used Vanilla JavaScript to create a dodge game with a shop that utilized DOM manipulation.
       `,
       'gif': dodgeGif,
       'image': dodgeImg,
