@@ -21,7 +21,7 @@ const Modal = (props) => {
         const height = el.offsetHeight;
         setMenuHeight(height);
     }
-    console.log(modal.summary.split('⋆'))
+    // console.log(modal.summary.replace(/[\r\n]/gm, '').trim().split('⋆'))
     return (
         <div id="myModal" className="modal" >
             {/* <button onClick={() => {  console.log('hi'); setActiveMenu('video'); }}>video</button> */}
@@ -42,7 +42,20 @@ const Modal = (props) => {
 
                         <img src={modal.gif} />
 
-                        <p className="portfolio-description">{modal.summary}</p>
+                        {/* <p className="portfolio-description">{modal.summary}</p> */}
+
+                        <ul className="portfolio-description">
+                            {modal.summary.replace(/[\r\n]/gm, '').trim().split('⋆').map((item, i) => {
+                                if(item === '') return
+                                return(
+                                    // <>
+                                        <li>
+                                            {item != '' && item.trim()}
+                                        </li>
+                                    // </>
+                                )
+                            })}
+                        </ul>
 
 
                         <div className="skill-list">

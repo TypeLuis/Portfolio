@@ -36,8 +36,25 @@
     margin-top: 0.5em;
   }
   .portfolio-description {
-    margin: 0;
-    font-size: clamp(1em, 3vw, 2.5em);
+    list-style: none;
+    ul {
+      // margin-left: 0;
+      // padding-left: 0;
+    }    
+
+    li{
+      margin-block: .75em;
+      padding-left: 1em;
+      text-indent: -1em;
+
+      &:before {
+        content: "⋆";
+        margin-right: 5px;
+      }
+    }
+    // display: flex;
+    // flex-direction: column;
+    // font-size: clamp(1em, 3vw, 2.5em);
   }
 
   .skill-list {
@@ -68,23 +85,24 @@
         transition: 1s;
       }
     }
-  }
-
-  ul {
-    list-style: none;
-    display: inline-flex;
-    flex-direction: row;
-    // margin: 10px auto;
-    // float: right;
-
-    li {
-      // display: flex;
-      // flex-direction: column;
-      font-size: clamp(1em, 3vw, 2.5em);
-      // font-size: 0.5em;
-      margin: 0 5px;
+    ul {
+      list-style: none;
+      display: inline-flex;
+      flex-direction: row;
+      // margin: 10px auto;
+      // float: right;
+  
+      li {
+        // display: flex;
+        // flex-direction: column;
+        font-size: clamp(1em, 3vw, 2.5em);
+        // font-size: 0.5em;
+        margin: 0 5px;
+      }
     }
   }
+
+  
   position: relative;
   background-color: #0a2a43;
   margin: auto;
