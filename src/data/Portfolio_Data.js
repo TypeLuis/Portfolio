@@ -83,7 +83,11 @@ const data_list = [
   
     {
       'name': 'ANIME SEARCH',
-      'summary': "Anime Search is a full stack web application that queries anime shows from a third party api. A user can add shows to their watched and favorites list and download images of their show. The chart page displays a graph of all user's favorite shows.",
+      'summary': `
+        ⋆ Developed a full stack web application using React that queries anime shows from a third party API.
+        ⋆ Significant contribution to increase in user engagement by allowing users to add shows to their watched and favorites list and download images of their shows.
+        ⋆ Developed a chart page that displays a graph of all user's favorite shows, detailing what time each show is on and how many episodes there are.
+      `,
       'gif': animeGif,
       'image': animeImg,
       'link': {

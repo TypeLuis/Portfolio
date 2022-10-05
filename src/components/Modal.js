@@ -47,6 +47,7 @@ const Modal = (props) => {
                         <ul className="portfolio-description">
                             {modal.summary.replace(/[\r\n]/gm, '').trim().split('⋆').map((item, i) => {
                                 if(item === '') return
+                                console.log(item)
                                 return(
                                     // <>
                                         <li>
