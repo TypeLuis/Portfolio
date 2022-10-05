@@ -16,7 +16,10 @@ import nextimg from '../images/Next.png'
 const data_list = [
     {
       'name': 'Dodge The Block',
-      'summary': 'Dodge the Block is a complex frontend game that uses EventListeners and Animations to move the blocks A user dodges incoming blocks while collecting the green blocks to increase currency for a shop that utilizes dom manipulation.',
+      'summary': `
+        ⋆ Made significant contributions to the successful completion of the project by developing complex frontend game features
+        ⋆ Used Vanilla JavaScript to create a dodge game with a shop that utilized DOM manipulation
+      `,
       'gif': dodgeGif,
       'image': dodgeImg,
       'link': {
