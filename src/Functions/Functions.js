@@ -86,7 +86,7 @@ functions.showIconModal = (modal, setModal) => {
         }
     }
     return (
-        <div id="myModal" className="modal">
+        <div id="myModal" className="modal skill_modal">
 
             <div className="modal-content">
                 <div className="modal-header">

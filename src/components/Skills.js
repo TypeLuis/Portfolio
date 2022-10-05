@@ -4,7 +4,6 @@ import functions from '../Functions/Functions'
 
 import dataList from "../data/Skill_Data";
 
-
 const Skills = (props) => {
 
   const [modal, setModal] = useState('')
@@ -30,7 +29,8 @@ const Skills = (props) => {
 
             {dataList.map((item, i) => {
               return (
-                <div title={item.title} key={i} className="slide"><span onClick={() => { setModal(item) }}><item.icon /></span></div>
+                <div title={item.title}
+                 key={i} className="slide"><span onClick={() => { setModal(item) }}><item.icon /></span></div>
               )
             })}
 
