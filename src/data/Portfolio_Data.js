@@ -17,8 +17,8 @@ const data_list = [
     {
       'name': 'Dodge The Block',
       'summary': `
-        ⋆ Made significant contributions to the successful completion of the project by developing complex frontend game features
-        ⋆ Used Vanilla JavaScript to create a dodge game with a shop that utilized DOM manipulation
+        ⋆ Made significant contributions to the successful completion of the project by developing complex frontend game features. \n
+        ⋆ Used Vanilla JavaScript to create a dodge game with a shop that utilized DOM manipulation. \n 
       `,
       'gif': dodgeGif,
       'image': dodgeImg,
@@ -35,8 +35,14 @@ const data_list = [
     },
   
     {
-      'name': 'Nextjs Store (In progress)',
-      'summary': "Nextjs Store is a full stack web application that utilizes Nextjs. Inspired by 'https://aylabag.com', creating components as close as 1 to 1 as possible",
+      'name': 'Nextjs Store',
+      'summary': `
+        ⋆ Developed a Full-Stack store web application using Next.js \n
+        ⋆ Implemented an intersection observer which allowed for different blocks of code to be executed when a user scrolled. This improved the user experience by reducing the amount of time required to load new content.\n
+        ⋆ Developed component-scoped styles using CSS module and SASS to create consistent, reusable code. \n
+        ⋆ Optimized front-end performance by reducing file size and implementing caching strategies. \n
+      
+      `,
       // 'gif': storeGif,
       'image': nextimg,
       'link': {
