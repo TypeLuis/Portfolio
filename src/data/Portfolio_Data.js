@@ -59,7 +59,14 @@ const data_list = [
   
     {
       'name': 'MY BLOG',
-      'summary': "A blog page that displays a user's post and youtube videos that uses the database to manipulate the DOM. Utilizes PostgreSQL and node.js for the backend and vanilla Javascript, HTML, CSS for the frontend. My blog is a blog post that allows a user to perform CRUD operation.",
+      'summary': `
+        ⋆ Developed a blog page that allowed users to view and interact with the blog page and YouTube videos.
+        ⋆ Worked with a team of 3 to develop the blog page and ensure that it met all the requirements.
+        ⋆ Accomplished increased task inefficiency by 40% through the development of the blog page.
+        ⋆ Developed a dynamic and responsive web application using vanilla JavaScript, HTML, and CSS
+        ⋆ Implemented a PostgreSQL database to store information for the web application and node.js to establish connection between the frontend and backend.
+        ⋆ Utilized Express.Js on the backend to develop REST API routes for CRUD operations which interact with Postgres database.
+      `,
       'gif': blogGif,
       'image': blogImg,
       'link': {
