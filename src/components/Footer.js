@@ -7,7 +7,7 @@ import { ReactComponent as Resume } from '../images/resume-svgrepo-com (1).svg'
 
 import GADocuments from '../images/Certificate-of-Completion-Luis_Lopez.pdf'
 
-import ResumeDocuments from '../images/01_Luis_Lopez_resume.docx'
+import ResumeDocuments from '../images/01_Luis_Lopez_Resume.docx'
 
 const Footer = (props) => {
 
