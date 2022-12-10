@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+
 .navbar {
   background-color: #0a2a43;
   z-index: 100;
+
   @media (min-width: 901px) {
     position: relative;
     top: 100%;
@@ -66,9 +68,11 @@
     .hamburger {
       display: none;
     }
+
     .burger-content {
       display: none;
     }
+
     .portfolio-name {
       display: none;
     }
@@ -157,12 +161,6 @@
         }
       }
 
-      // li {
-      //   list-style-type: none;
-      //   font-size: 1.5em;
-      //   padding: 10px 0;
-      // }
-
       &.true {
         @include animate(fadeIn, 0.5s, linear, 1);
 
@@ -171,6 +169,7 @@
             top: -100px;
             opacity: 0;
           }
+
           to {
             top: 0;
             opacity: 1;
@@ -186,6 +185,7 @@
             top: 0;
             opacity: 1;
           }
+
           to {
             top: -100px;
             opacity: 0;
